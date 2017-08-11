@@ -6,14 +6,23 @@ import sun.awt.im.InputMethodJFrame;
 public class Main {
     public static void main(String[] args) {
 
-        Monster monster1 = new Monster(10, 5);
+        Monster monster1 = new Monster(10, 5, "Barbarzynca");
+        Monster monster2 = new Monster(10, 5, "Dziki pies");
 
-        Methods myMethods = new Methods();
-        System.out.println( myMethods.add(5, 5) );
-        System.out.println( myMethods.rest(123) );
+        System.out.println(monster1.toString());
+        System.out.println(monster2);
 
-        int c = myMethods.rest(123);
-        System.out.println(c);
+
+        if(monster1.equals(monster2)){
+            System.out.println("Są takie same!");
+        }else{
+            System.out.println("NIE SĄ!");
+        }
+
+        Person dorota = new Person("Dorota", "Kowalska", 25, 'K');
+        Person janek = new Person("Jan", "Kowalski", 55, 'M');
+
+
 
     }
 }
