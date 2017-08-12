@@ -9,6 +9,8 @@ public class Main {
         Monster monster1 = new Monster(10, 5, "Barbarzynca");
         Monster monster2 = new Monster(10, 5, "Dziki pies");
 
+
+
         System.out.println(monster1.toString());
         System.out.println(monster2);
 
@@ -23,6 +25,7 @@ public class Main {
         Person janek = new Person("Jan", "Kowalski", 55, 'M');
 
 
-
+        Methods methods = new Methods();
+        System.out.println(methods.nwd(15, 3));
     }
 }

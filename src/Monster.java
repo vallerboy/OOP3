@@ -5,6 +5,7 @@ public class Monster {
     private  int attack;
     private int def;
     private String name;
+    public static double PI = 3.14;
 
     public Monster(int def){
         this( 0, def,"noname");
