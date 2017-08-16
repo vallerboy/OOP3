@@ -1,7 +1,7 @@
 /**
  * Created by Lenovo on 11.08.2017.
  */
-public class Person {
+public class Person implements Comparable<Person>{
     private String name;
     private String surname;
     private int age;
@@ -76,5 +76,14 @@ public class Person {
                 ", age=" + age +
                 ", gender=" + gender +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        if (age > o.getAge()){
+            return 1;
+        }else{
+            return -1;
+        }
     }
 }
