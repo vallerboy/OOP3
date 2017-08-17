@@ -40,7 +40,7 @@ public class Main {
         Collections.sort(personList, new AgeComparator());
 
         Set<Monster> set = new TreeSet<>();
-        
+
         for (Person person : personList) {
             System.out.println(person);
         }
