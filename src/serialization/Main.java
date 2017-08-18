@@ -29,7 +29,7 @@ public class Main {
         }
 
         //to sluzy do odczytywania zapisanego obiektu
-        try {
+        try {asd
             ObjectInputStream objectInputStream =
                     new ObjectInputStream(new FileInputStream(file));
             Person personRead = (Person) objectInputStream.readObject();
